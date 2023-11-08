@@ -13,6 +13,7 @@ const router = express.Router();
  */
 router.get('/:meetingId', async (req, res) => {
   const { headerConfig, params } = req;
+  console.log('params', params);
   const { meetingId } = params;
 
   try {
